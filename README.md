@@ -3,7 +3,7 @@
 <ul>
 <br><b><h3>contact to Designer :</b></h3></br>
 <p>
-<li><a href="Https://telegram.me/peditx_international"> <img src=http://musicbazha.cf/assets/flags/peditx.png alt="designed by PeDitX " width="150" height="150" border="2"> </a></li>
+<li><a href="Https://telegram.me/peditx_international"> <img src=http://musicbazha.cf/public/assets/flags/peditx.png alt="designed by PeDitX " width="150" height="150" border="2"> </a></li>
 <br><b><h3>Musicbazha Telegram Group :</b></h3></br>
 <li><a href="https://telegram.me/joinchat/AiveJT7XvCSn6MeJCK_2BQ"> <img src=http://musicbazha.cf/assets/flags/mbh.png alt="Musicbazha GP " width="150" height="150" border="2"> </a></p></li>
 <li>چت ممنوع !! فقط درخواست آهنگ
