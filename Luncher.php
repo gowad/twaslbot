@@ -245,7 +245,7 @@ else if ($chat_id == $admin && $booleans[0] == "true") {
     }
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -296,7 +296,7 @@ Get Out Of Here Idiot🖕
 			
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -355,7 +355,7 @@ Get Out Of Here Idiot🖕
 			
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -408,7 +408,7 @@ Get Out Of Here Idiot🖕
         apiRequest("sendVoice", array('chat_id' => $membersidd[$y], "voice" => $video));
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -462,7 +462,7 @@ Get Out Of Here Idiot🖕
 
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -518,7 +518,7 @@ else if ($chat_id == $admin && $booleans[0] == "true") {
 
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -742,7 +742,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 			apiRequest("sendMessage", array('chat_id' => $membersidd[$y], "text" => $texttoall,"parse_mode" =>"HTML"));
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 تم الارسال الى  ".$memcout." من المشتركين.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -765,7 +765,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 		$txtt = file_get_contents('banlist.txt');
 		$membersidd= explode("\n",$txtt);
 		$mmemcount = count($membersidd) -1;
-		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "🚫 تعداد کل افرادی که در لیست سیاه قرار دارند : ".$mmemcount,'reply_markup' => array(
+		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "🚫 عدد الاعضاء المحظورين : ".$mmemcount,'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
         'selective' => true,
