@@ -651,7 +651,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     }else if ($text == "⚓️ Help" && $chat_id==$admin) {
       
-    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "`برای پاسخ پیام مورد نظر را ریپلای کنید`
+    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "``
 🔷 قائمة المساعده :
 
 🔹`1.` */ban*
@@ -664,10 +664,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 لوضع رساله الترحيب☺️
 —------------------------------
 🔹`4. `*/setdone *
-لوضع رساله الانتهاء✅
+لوضع رساله الارسال✅
 
 ➖➖➖➖➖➖➖➖➖➖➖
-🔶 لیست دکمه  های موجود :
+🔶 قائمة الازرار :
 
 🔸`1.`*Send To All*
 ارسال رساله جماعيه
@@ -713,9 +713,9 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
         'resize_keyboard' => true)));
     }
     else if ($text == "🔙 Back" && $chat_id==$admin) {
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام قربان حوش آمدید😉
-برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید 😎
-برای آشنایی دکمه ی ⚓️ Help️ را بزنید 👌😃
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'مرحبا بك😉
+للرد على الرسائل قم بالضغط على replay و ثم اكتب الرساله و ارسلها 😎
+لمعرفه المزيد اكتب ⚓️ Help️ 👌😃
 .', 'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
