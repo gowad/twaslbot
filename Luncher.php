@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '353131401:AAFm7fe0_vCRCjnuyaQ6X0zVOUUA5LPVolU');
+define('BOT_TOKEN', 'توكن البوت هنا و روح للسطر 118 و حط ايديك');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = 249777379;
+  $admin = 375147390;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
@@ -572,11 +572,11 @@ if($chat_id==$admin){
 
 -!-@-#-$"."
 ".$pmembersiddd[1]);
-apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"📝پیام خوش آمد گویی به 👇
+apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"📝رسالة الترحيب هي 👇
 
 ".$starttext.""."
 
-👆تغییر یافت
+👆تم التغيير
 ."));
     
     
