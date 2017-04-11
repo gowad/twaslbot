@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', 'توكن البوت هنا و روح للسطر 118 و حط ايديك');
+define('BOT_TOKEN', 'توكن البوت هنا و روح للسطر 118 و خلي ايديك');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -632,15 +632,15 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     		
     		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '
-یکی از گزینه ها را انتخاب کنید
+حدد أحد الخيارات
 —---------------------------------------------
 🔶🔸 Clean Members
-🔶🔸پاک کردن لیست مخاطبین
+🔶🔸حذف المشتركين
 
 🔷🔹Clean Block List
-🔷🔹پاک کردن لیست سیاه
+🔷🔹حذف الاعضاء المحظورين
 
-در صورت انصراف Back را بزنید
+اضغط Back للعوده
 .', 'reply_markup' => array(
         'keyboard' => array(array('❌ Clean Members ','❌ Clean Block List '),array('🔙 Back')),
         'one_time_keyboard' => true,
@@ -693,7 +693,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		$txxt = file_get_contents('pmembers.txt');
         $pmembersid= explode("\n",$txxt);
     		file_put_contents('pmembers.txt',"");
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'لیست مخاطبین پاک شد ✔️
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'تم حذف اعضاء البوت ✔️
 .', 'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -706,7 +706,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		$txxt = file_get_contents('banlist.txt');
         $pmembersid= explode("\n",$txxt);
     		file_put_contents('banlist.txt',"");
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'لیست سیاه پاک شد ✔️ ', 'reply_markup' => array(
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'تم حذف الاعضاء المحظورين ✔️ ', 'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
         'selective' => true,
